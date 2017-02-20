@@ -43,3 +43,9 @@ def main():
 
 if __name__ == '__main__':
 	data = main()
+
+	playerDF = pd.DataFrame(data)
+
+	playerDF.dropna(how='all', inplace=True)
+
+	playerDF[]
