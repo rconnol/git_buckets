@@ -1,5 +1,15 @@
 #!usr/bin/env python3
 import pandas as pd
+import numpy as np
+
+# class PlayerData(object):
+# 	"""A pd.DataFrame of data scraped from Basketball-Reference
+# 	Different Parameters for scraping data.
+# 	"""
+# 	url = 
+
+# 	def __init__(self, df):
+# 		self.df = df
 
 def clean_age_column(cell):
 
@@ -90,6 +100,8 @@ def shift_columns(df, columns, shifts, averages):
 		df[column + 'seasonavg'] = df.groupby('player')[column].apply(
 			lambda x: pd.expanding_mean(x).shift())
 
+	df['rest'] = df.groupby('player')['date_game'].diff().astype('timedelta64[D]')
+
 	df.sort_values(by=['date_game', 'player'],
 	                 ascending=False,
 	                 inplace=True)
@@ -102,8 +114,16 @@ def remove_last_row(group):
 
 
 def main():
+	pass
 
+
+
+if __name__ == '__main__':
+	main()
+	
 	playerDF = pd.read_csv('player_data.csv', index_col=0)
+
+	playerDF.fillna(0, inplace=True)
 	
 	playerDF['age'] = playerDF['age'].apply(clean_age_column)
 	
@@ -118,9 +138,9 @@ def main():
 
 	del playerDF['pos']
 
-	playerDF['draftkings'] = playerDF.apply(calculate_draftkings_score, axis=1)
-
 	playerDF['date_game'] = pd.to_datetime(playerDF['date_game'])
+
+	playerDF['draftkings'] = playerDF.apply(calculate_draftkings_score, axis=1)
 
 	playerDF.sort_values(by=['date_game', 'player'],
 		                 ascending=False,
@@ -129,7 +149,7 @@ def main():
 
 	metrics = ['ast', 'blk', 'drb', 'fg', 'fg2', 'fg2_pct', 'fg2a',
 	           'fg3', 'fg3_pct', 'fg3a', 'fg_pct', 'fga', 'ft',
-	           'ft_pct', 'fta', 'orb', 'pf', 'pts', 'stl', 'tov', 'trb']
+	           'ft_pct', 'fta', 'mp', 'orb', 'pf', 'pts', 'stl', 'tov', 'trb']
 
 	shifts = [-1, -2, -3, -4, -5,-6, -7, -8, -9, -10]
 
@@ -140,7 +160,3 @@ def main():
 	playerDF = playerDF.groupby('player', group_keys=False).apply(remove_last_row)
 
 	playerDF.to_csv('clean_player_data.csv')
-
-
-if __name__ == '__main__':
-	main()
