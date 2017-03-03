@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-import pandas as pd
 import urllib.parse
+import sys
+import pdb
+import pandas as pd
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from sys import argv
 
 
 class BasketballReference(object):
@@ -82,8 +83,7 @@ class BasketballReference(object):
                "order_by" : 'pts',
                "order_by_asc" : '',
                "offset" : 0,
-
-        }
+               }
 
         self.url = self.url_base + urllib.parse.urlencode(self.url_query)                         
 
@@ -95,13 +95,11 @@ class BasketballReference(object):
         return self.url
     
 
-    def get_page(self):
+    def get_page(self, driver):
     	#don't want to initialize driver in __init__
     	#opens blank webpage upon initialization
 
         url = self.api_constructor()
-
-        driver = webdriver.Firefox()
 
         driver.get(url)
         
@@ -115,19 +113,18 @@ class BasketballReference(object):
             print('End of Stats')
             table_exists = False
 
-        driver.quit()
-
         return html, table_exists
 
 
     def tabulate_webpage(self):
 
         data = []
-        self.csv = csv
+
+        driver = webdriver.Firefox()
 
         while True:
 
-            page, table_exists = self.get_page()
+            page, table_exists = self.get_page(driver=driver)
 
             if not table_exists:
                 break
@@ -137,7 +134,8 @@ class BasketballReference(object):
             
             table = soup.find(id='stats')
             
-            rows = table.findChildren('tr', {'class':'right'})
+            rows = [row for row in table.findChildren('tr') if 'data-row'
+                    in row.attrs and 'class' not in row.attrs]
             
             for row in rows:
                 cells = row.findChildren('td')
@@ -146,6 +144,8 @@ class BasketballReference(object):
                 data.append(info)
 
             self.url_query['offset'] += 100
+
+        driver.quit()
 
         df = pd.DataFrame(data)
 
@@ -156,8 +156,10 @@ def main():
     scraper = BasketballReference()
     bballrefDF = scraper.tabulate_webpage()
     
-    if sys.argv[1]:
+    try:
         data.to_csv(sys.argv[1])
+    except:
+    	pass
 
     return bballrefDF
 

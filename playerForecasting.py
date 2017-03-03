@@ -11,7 +11,7 @@ if __name__ == '__main__':
 	playerDF = pd.read_csv('clean_player_data.csv', index_col=0)
 
 	exclude_columns = ['ast', 'blk', 'date_game', 'drb', 'fg', 'fg2',
-	                   'fg2_pct', 'fg2a',
+	                   'fg2_pct', 'fg2a', 'opp_id', 'player', 'team_id',
 	                   'fg3', 'fg3_pct', 'fg3a', 'fg_pct', 'fga', 'ft',
 	                   'ft_pct', 'fta', 'game_result', 'game_score',
 	                   'mp', 'orb', 'pf', 'pts', 'stl', 'tov', 'trb']
@@ -23,6 +23,6 @@ if __name__ == '__main__':
 
 	forecastingDF = pd.get_dummies(forecastingDF)
 
-	forecastingDF.to_csv('forecasting_stats.csv')
+	forecastingDF.to_csv('forecasting_stats.csv', index=False)
 
 	solar_corr.main('forecasting_stats.csv', 'draftkings', 'nba_solar.csv')
