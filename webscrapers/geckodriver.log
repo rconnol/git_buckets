@@ -1,0 +1,132 @@
+1489963283410	geckodriver	INFO	Listening on 127.0.0.1:35148
+1489963284481	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.cFEBywObqreE
+1489963284481	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1489963284484	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38291
+1489963285264	Marionette	INFO	Listening on port 38291
+1489963285618	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+JavaScript error: https://d2p3bygnnzw9w3.cloudfront.net/req/201703173/js/bbr/sr-min.js, line 6: TypeError: t is undefined
+[Child 27548] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZQQBpC/firefox-52.0+build2/ipc/glue/MessageChannel.cpp, line 2143
+[Child 27548] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZQQBpC/firefox-52.0+build2/ipc/glue/MessageChannel.cpp, line 2143
+1490661598586	geckodriver	INFO	Listening on 127.0.0.1:52774
+1490661599665	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.hYyXUmEdkgG8
+1490661599666	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490661599668	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35569
+1490661600485	Marionette	INFO	Listening on port 35569
+1490661600881	Marionette	WARN	TLS certificate errors will be ignored for this session
+1490661723595	Marionette	INFO	New connections will no longer be accepted
+[Child 13259] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-ZQQBpC/firefox-52.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0xE40003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 13259] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZQQBpC/firefox-52.0+build2/ipc/glue/MessageChannel.cpp, line 2143
+[Child 13259] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZQQBpC/firefox-52.0+build2/ipc/glue/MessageChannel.cpp, line 2143
+1490661723742	geckodriver	INFO	Listening on 127.0.0.1:46710
+1490661724808	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ZdDeH84Otwyn
+1490661724809	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490661724812	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46344
+1490661725617	Marionette	INFO	Listening on port 46344
+1490661725984	Marionette	WARN	TLS certificate errors will be ignored for this session
+1490661728944	Marionette	INFO	New connections will no longer be accepted
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3E0003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[Child 13424] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-ZQQBpC/firefox-52.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+[Child 13424] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZQQBpC/firefox-52.0+build2/ipc/glue/MessageChannel.cpp, line 2143
+[Child 13424] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZQQBpC/firefox-52.0+build2/ipc/glue/MessageChannel.cpp, line 2143
+1490736410813	geckodriver	INFO	Listening on 127.0.0.1:38541
+1490736411884	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.J3iG8nL3outq
+1490736411885	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1490736411888	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38440
+1490736412752	Marionette	INFO	Listening on port 38440
+1490736413121	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 18654] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZQQBpC/firefox-52.0+build2/ipc/glue/MessageChannel.cpp, line 2143
+[Child 18654] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZQQBpC/firefox-52.0+build2/ipc/glue/MessageChannel.cpp, line 2143
